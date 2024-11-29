@@ -5,6 +5,20 @@ body {
   background-color: #003366;
 }
 
+/* Hover scale up for navbar-brand */
+.navbar-brand:hover {
+  transform: scale(1.1); /* Membesar 10% */
+  transition: transform 0.3s ease; /* Animasi halus */
+}
+
+/* Hover scale up for navbar links */
+.nav-link:hover {
+  transform: scale(1.2); /* Membesar 10% */
+  transition: transform 0.3s ease; /* Animasi halus */
+  text-shadow: 1px 1px 2px #000;
+  color: white;
+}
+
 .hero-section {
   position: relative;
   background-image: url("assets/img/hero.png"); /* Ganti dengan path gambar */
@@ -14,6 +28,12 @@ body {
   color: white;
   padding: 200px 0;
   text-align: center;
+  text-shadow: 1px 1px 5px #000000;
+}
+
+.hero-hover:hover {
+  transform: scale(1.1); /* Membesar 10% */
+  transition: transform 0.3s ease-in-out; /* Animasi halus */
 }
 
 .hero-section::before {
@@ -32,6 +52,24 @@ body {
   z-index: 2;
 }
 
+.dividing:hover {
+  transform: scale(1.1); /* Membesar 10% */
+  transition: transform 0.3s ease; /* Animasi halus */
+}
+
+.tombol-hero {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: solid white 1px;
+}
+
+.tombol-hero:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #003366 !important;
+  color: white;
+  border: none;
+}
+
 .social-links .btn {
   margin: 10px;
   width: 200px;
@@ -43,6 +81,17 @@ nav i img {
 
 .bg-custom {
   background-color: #003366 !important;
+}
+
+.about {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+  background-color: #003366 !important;
+  border-radius: 5px;
+  color: white;
+  transform: scale(1.05);
 }
 
 .card {
@@ -78,11 +127,19 @@ nav i img {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.email:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #003366 !important;
+  color: white !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .btn-success:hover {
   background-color: #28a745; /* Warna lebih gelap untuk tombol WhatsApp */
   color: #fff; /* Warna teks tetap putih */
   transform: scale(1.05); /* Membesarkan tombol sedikit */
-  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3); /* Menambahkan bayangan */
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
   transition: all 0.3s ease;
 }
 

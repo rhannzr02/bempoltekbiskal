@@ -63,25 +63,28 @@
     <!-- Hero Section -->
     <section id="beranda" class="hero-section">
       <div class="container">
-        <h1>Badan Eksekutif Mahasiswa</h1>
-        <h2>Politeknik Bisnis Kaltara</h2>
-        <p>Membina, Mengembangkan, dan Memajukan Potensi Mahasiswa</p>
-        <a href="#profil" class="btn btn-light mt-3">Selengkapnya</a>
+        <h1 class="hero-hover">Badan Eksekutif Mahasiswa</h1>
+        <h2 class="hero-hover">Politeknik Bisnis Kaltara</h2>
+        <p class="hero-hover fw-semibold">Membina, Mengembangkan, dan Memajukan Potensi Mahasiswa</p>
+        <a href="#profil" class="btn btn-dark bg-transparent mt-3 tombol-hero">Selengkapnya</a>
       </div>
+    </section>
+
+    <section class="py-1 bg-custom">
     </section>
 
     <!-- Profil Section -->
 
-    <section id="about" class="py-5 bg-custom text-white">
+    <section id="about" class="py-5 bg-custom text-white dividing">
       <div class="container">
         <div class="col text-center">
-            <h1>About BEM</h1>
+            <h1>About Us</h1>
           </div>
       </div>
     </section>
 
     <section class="py-5">
-      <div class="container about">
+      <div class="container about py-3 px-3">
         <div class="col text-center">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -130,7 +133,7 @@
       </div>
     </section>
 
-    <section id="visi-misi" class="py-5 bg-custom text-white">
+    <section id="visi-misi" class="py-5 bg-custom text-white dividing">
       <div class="container">
         <div class="col text-center">
             <h1>Visi dan Misi</h1>
@@ -172,7 +175,7 @@
     </section>
 
     <!-- Kegiatan Section -->
-    <section id="kegiatan" class="py-5 bg-custom text-white">
+    <section id="kegiatan" class="py-5 bg-custom text-white dividing">
       <div class="container">
         <div class="col text-center">
             <h1>Kegiatan Terkini</h1>
@@ -234,7 +237,7 @@
       </div>
     </section>
     
-    <section id="kegiatan" class="py-5 bg-custom text-white">
+    <section id="kegiatan" class="pt-4 pb-3 bg-custom text-white dividing">
       <div class="container">
         <div class="col text-center">
           <h2>Profil Instagram BEM Politeknik Bisnis Kaltara</h2>
@@ -255,9 +258,38 @@
     </section>
 
         <!-- Kontak Section -->
-        <section id="kontak" class="py-5 navbar-custom text-white">
+        <section id="kegiatan" class="py-5 bg-custom text-white dividing">
+          <div class="container">
+            <div class="col text-center">
+                <h1>Hubungi Kami </h1>
+              </div>
+          </div>
+        </section>
+
+        <section id="kontak" class="py-5">
             <div class="container">
-              <h2 class="text-center mb-4">Hubungi Kami</h2>
+              <div class="row">
+                <div class="col-md-8 mx-auto py-5 pt-4 bg-light rounded text-dark px-4 email">
+                  <h2 class="text-center mb-4">Email</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <br>
               <div class="row social-links text-center">
                 <div class="col-12">
                   <a
@@ -279,7 +311,7 @@
                     target="_blank"
                     class="btn btn-danger"
                   >
-                    <i class="bi bi-instagram me-2"></i>Instagram
+                    <i class="bi bi-envelope me-2"></i>Email Us
                   </a>
                 </div>
               </div>
@@ -287,7 +319,7 @@
           </section>
 
     <!-- Footer -->
-    <footer class="bg-custom text-white text-center py-3">
+    <footer class="bg-custom text-white text-center pb-3 pt-5">
       <div class="container">
         <p>&copy; 2024 BEM Politeknik Bisnis Kaltara. All Rights Reserved.</p>
       </div>
